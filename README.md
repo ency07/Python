@@ -1,2 +1,2 @@
 # Python
-Escribiendonotas, se aprender Python
+Escribiendo notas, se aprender Python
