@@ -24,12 +24,34 @@
 # Usa los métodos de cadenas (upper(), lower(), count(), replace()).
 # Usa input() para obtener la frase y las palabras/letras del usuario.
 
-frase = input("Escibe una frase y convirtamos las letras MAYUSCULAS: ")
+frase = input("\nEscibe una frase y convirtamos las letras MAYUSCULAS: ")
+Mayusculas = frase.upper()
+print(Mayusculas)
 
-print(frase.upper())
+frase = input("\nEscibe una frase y convirtamos las letras MINUSCULAS: ")
+minusculas = frase.lower()
+print(minusculas)
 
+# Conteo de letra 
+frase = input("\nCuantas veces aparece la letra: ")
+conteo = frase.count("e")
+print(conteo)
 
+# Conteo de letra desde usuario 
+frase = input("\nEscibe una frase y contemos una letra en especial: ")
+letra = input("Cuantas veces aparece la letra: ")
+conteo = frase.count(letra)
+print(conteo)
 
+# Remplazar letra por otra desde usuario
+frase = input("\nEscibe una frase y remplacemos una letra: ")
+letra1 = input("Que letra quieres remplazar: ")
+letra2 = input("Por cual la quieres remplazar: ")
+
+resultado = frase.replace(letra1, letra2)
+print(resultado)
+
+#TODO Resuelto
 
 # ? Ejercicio 3: Listas
 # * Descripción
