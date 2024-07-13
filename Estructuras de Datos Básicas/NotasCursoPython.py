@@ -220,6 +220,3 @@ print(es_verdad and es_falso)
 print(es_verdad or es_falso)
 print(not es_verdad)
 
-#Probando los Booleanos
-
-
