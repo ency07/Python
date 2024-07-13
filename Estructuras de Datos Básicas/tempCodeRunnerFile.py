@@ -1,6 +1,19 @@
-frase = input("\nEscibe una frase y remplacemos una letra: ")
-letra1 = input("Que letra quieres remplazar: ")
-letra2 = input("Por cual la quieres remplazar: ")
+tupla = (1, "DOS", 5, "cuatro", 3, True)
+#primer = tupla[1]
 
-resultado = frase.replace(letra1, letra2)
-print(resultado)
+
+cero= tupla[0]
+uno= tupla[1]
+dos=tupla[2]
+tres=tupla[3]
+cuatro = tupla[4]
+cinco = tupla[5]
+
+#print(primer)
+
+print(cero)
+print(uno)
+print(dos)
+print(tres)
+print(cuatro)
+print(cinco)

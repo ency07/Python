@@ -32,12 +32,12 @@ frase = input("\nEscibe una frase y convirtamos las letras MINUSCULAS: ")
 minusculas = frase.lower()
 print(minusculas)
 
-# Conteo de letra 
+# Conteo de letra
 frase = input("\nCuantas veces aparece la letra: ")
 conteo = frase.count("e")
 print(conteo)
 
-# Conteo de letra desde usuario 
+# Conteo de letra desde usuario
 frase = input("\nEscibe una frase y contemos una letra en especial: ")
 letra = input("Cuantas veces aparece la letra: ")
 conteo = frase.count(letra)
@@ -51,7 +51,15 @@ letra2 = input("Por cual la quieres remplazar: ")
 resultado = frase.replace(letra1, letra2)
 print(resultado)
 
-#TODO Resuelto
+# TODO >>>>>>>>>  Ejercicio 2 Resuelto  <<<<<<<<<<<<
+
+# Se aprendio :
+# que .upper(), es para colcar las letras en mayusculas
+# que .lower(), es para colocar las letras en minusculas
+# que .count(), te contabiliza la cantidad de elementos o caracteres
+# que .replace(), funciona con dos elementos, 1 el que quieres remplazar y 2 por el cual lo quieres remplazar
+
+# TODO >>>>>>>>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<<<<<<<<
 
 # ? Ejercicio 3: Listas
 # * Descripción
@@ -68,6 +76,37 @@ print(resultado)
 # Usa los métodos de listas (append(), insert(), remove(), sort()).
 # Recuerda que las listas se indexan desde 0.
 
+lista = [9, 3, 0, 8, 12, 15, 10, 7]
+
+lista.append(int(input("Añada un nuevo numero a la lista: ")))
+print(f"Lista actualizada con el nuevo numero {lista}")
+
+print("\nInsertaremos un numero en una posicion especifica\n")
+insertar = int(input("En que posicion quieres insertar el numero: "))
+num = int(input("Cual es el numero: "))
+lista.insert(insertar, num)
+print(f"Lista actualizada con el nuevo numero {lista} ")
+
+print("\nAhora eliminaremos un numero: \n")
+eliminar = int(input("En que posicion quieres eliminar el numero: "))
+lista.pop(eliminar)
+print(f"Lista actualizada con el metodo .pop {lista} \n")
+
+lista.sort()
+# nueva_lista = sorted(lista, reverse=True)
+# print(nueva_lista)
+print(lista)
+
+# TODO >>>>>>>>>>  Ejercicio 3 Resuelto  <<<<<<<<<<<<
+# Que se aprendio:
+# que .insert(), es para insertar un elemento en una posicion especifica y que funciona con 2 elementos
+# que .pop(), elimina la posicion que le asignes
+# que .remove(), elimina el elemento quieres eliminar
+# que .sort(), te organiza de forma ascendente la lista  ---- Para invertir se usa (reverse=True)
+# tambien se puede utilizar el metodo =sorted(), para organizar la lista --- igual que arriba
+
+# TODO >>>>>>>>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<<<<<<<<
+
 # ? Ejercicio 4: Tuplas
 # * Descripción
 # Crea una tupla con cinco elementos (pueden ser de diferentes tipos). Realiza las siguientes operaciones:
@@ -80,6 +119,27 @@ print(resultado)
 # Recuerda que las tuplas son inmutables.
 # Usa la indexación para acceder a los elementos.
 # Desempaquetar es simplemente asignar los elementos de la tupla a variables separadas.
+
+
+tupla = (1, "DOS", 5, "cuatro", 3, True)
+#primer = tupla[1]
+
+
+cero= tupla[0]
+uno= tupla[1]
+dos=tupla[2]
+tres=tupla[3]
+cuatro = tupla[4]
+cinco = tupla[5]
+
+#print(primer)
+
+print(cero)
+print(uno)
+print(dos)
+print(tres)
+print(cuatro)
+print(cinco)
 
 # ? Ejercicio 5: Diccionarios
 # * Descripción

@@ -2,11 +2,11 @@
 
 # * Sintaxis Basica de Python
 
-# TODO *** COMENTARIOS DE UNA LINEA
+# ? COMENTARIOS DE UNA LINEA
 # print("Aprendiendo Python")  # Esto imprime un saludo
 
 
-# TODO *** COMENTARIOS DE VARIAS LINEAS :
+# ? COMENTARIOS DE VARIAS LINEAS :
 # Son 3 comillas (simples o dobles) al inicion y 3 comillas al final
 
 """
@@ -16,7 +16,7 @@ para hacer comentarios mas extensos y explciacion del codigo
 """
 print("Aprendiendo Python")
 
-# TODO *** IDENTACION
+# ? IDENTACION
 # Es muy importante, porque se utilza para definir la estructura del codigo.
 # Python no usa {} para delimitar bloques de codigo. En su lugar utiliza la identacion.
 
@@ -29,7 +29,7 @@ if 5 > 2:
         print("3 es mayor que 1")  # dentro del bloque del if anidaddo, segundo identado
 
 
-# TODO ***  QUE ES UNA VARIABLES
+# ?QUE ES UNA VARIABLES
 # son espacio de memoria donde se almacenan datos.
 
 # Asignacion de variables
@@ -37,12 +37,12 @@ if 5 > 2:
 x = 5
 nommbre = "Juan"
 
-# TODO *** TIPOS DE DATOS
+# ?TIPOS DE DATOS
 
 # * Numeros, Cadenas (strings), Listas, Tuplas, Diccionarios, Conjuntos (sets), Booleanos.
 
 
-# ? Numeros: python maneja diferentes tipos de numeros;
+# ? NUMEROS: python maneja diferentes tipos de numeros;
 
 # Enteros (Int)  -- Sin decimales
 num1 = 12
@@ -71,7 +71,7 @@ modulo = 7 % 3
 print(raiz_cuadrada)
 
 
-# ? Cadenas (string)
+# ? CADENAS (string)
 
 cadena1 = "Aprendiendo"
 cadena2 = "PYTHON"
@@ -102,7 +102,7 @@ print(longitud)
 print(reemplazar)
 
 
-# ? Listas: Colecciones ordenadas y mutables de elementos, se definen usaso [].
+# ? LISTAS: Colecciones ordenadas y mutables de elementos, se definen usaso [].
 
 # una lista de elementos
 lista = [1, 2, 3, 4, 5]
@@ -112,13 +112,15 @@ print(f"Lista mixta {mixta}")
 
 
 # accediendo a elementos
-print(f"Accediendo a los elementos de la lista -->:", lista[0])  # muestra el numero 1 de la lista
+print(
+    f"Accediendo a los elementos de la lista -->:", lista[0]
+)  # muestra el numero 1 de la lista
 print(f"Accediendo a elementos de la lista mixta -->", mixta[4])
 
 
 # Modificacion de elementos
 primero = lista[0] = 10
-mixta[1] = 'Quince'
+mixta[1] = "Quince"
 penultimo = mixta[-2]
 
 print(f"Modificacion de elementos de la lista --> {primero}")
@@ -127,7 +129,7 @@ print(f"Modificacion de elementos de la lista mixta --> {penultimo}")
 
 
 # Añadir elementos
-lista.append(6)     # añade numero al final
+lista.append(6)  # añade numero al final
 lista.insert(1, 1.5)
 print(f"Añadir elementos a la listas {lista}")
 
@@ -141,25 +143,27 @@ print(lista)  # se imprime la lista final con todas las modificaciones
 print(mixta)  # se imprime la lista final con todas las modificaciones
 
 
-# ? Tuplas: Colecciones ordenadas e inmutables de elementos. Se definen usando ().
+# ? TUPLAS: Colecciones ordenadas e inmutables de elementos. Se definen usando ().
 
-tupla = (1, 2, 3, 'Cuatro', 5)
+tupla = (1, 2, 3, "Cuatro", 5)
 
 # Accediendo a los elemtos
 primero = tupla[0]
 ultimo = tupla[-1]
 
 # desempaquetado de tuplas
-a,b,c,d,e = tupla 
+a, b, c, d, e = tupla
 
 # Metodos de tuplas
 longitud = len(tupla)
-conteo = tupla.count (2)
-indice = tupla.index('Cuatro')
+conteo = tupla.count(2)
+indice = tupla.index("Cuatro")
 
 print(primero)
 print(ultimo)
-print(a,b,c,d,e) # si falta un elemento manda error, misma cantidad de variables, misma cantidad de elementos
+print(
+    a, b, c, d, e
+)  # si falta un elemento manda error, misma cantidad de variables, misma cantidad de elementos
 print(longitud)
 print(conteo)
 print(indice)
@@ -168,7 +172,7 @@ print(indice)
 # tupla[0] = 10 --> esto ocasiona un error
 
 
-# ? Diccionarios: Son colecciones de pares(clave-valor), estos se definen usando {}.
+# ? DICCIONARIOS: Son colecciones de pares(clave-valor), estos se definen usando {}.
 
 diccionario = {"nombre": "juan", "edad": 40, "ciudad": "Barranquilla"}
 
@@ -188,15 +192,18 @@ print(diccionario)
 
 
 # Metodos de diccionarios
-claves = diccionario.keys() 
+claves = diccionario.keys()
 valores = diccionario.values()
 items = diccionario.items()
-diccionario.update({'profesion': 'Graphic Designer'}) # Añadir nuevas claves y valores a los diccionarios
+diccionario.update(
+    {"profesion": "Graphic Designer"}
+)  # Añadir nuevas claves y valores a los diccionarios
 
 print(items)
 
 
-# ? Conjuntos (sets): Son colecciones desordenadas de elementos unicos. Se definen usando llaves {} o la funcion set().
+# ? CONJUNTOS (sets): Son colecciones desordenadas de elementos unicos. Se definen usando llaves {}
+# #* O la funcion set().
 
 conjunto = {1, 2, 3, 4, 5}
 
@@ -211,7 +218,7 @@ conjunto.add(2)
 
 print(conjunto)
 
-# ? Booleanos: Representan valores de verdad; True y False
+# ? BOOLEANOS: Representan valores de verdad; True y False
 
 es_verdad = True
 es_falso = False
@@ -219,4 +226,3 @@ es_falso = False
 print(es_verdad and es_falso)
 print(es_verdad or es_falso)
 print(not es_verdad)
-
